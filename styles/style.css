@@ -1,0 +1,690 @@
+@font-face {
+    font-family: forza;
+    src: url(../fonts/Forza-Book.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: forzaThin;
+    src: url(../fonts/Forza-Thin.woff2);
+    
+}
+
+@font-face {
+    font-family: forza;
+    src: url(../fonts/Forza-Bold.woff2);
+    font-weight: bold;
+}
+@font-face {
+    font-family: forza;
+    src: url(../fonts/Forza-Medium.woff2);
+    font-weight: medium;
+}
+
+
+/* ..................css for all.................. */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+img {
+    display: block;
+}
+li{
+    list-style-type: none;
+}
+
+body{
+    background-color: grey;
+    position: relative;
+}
+a {
+    
+    text-decoration: none; 
+  }
+
+#dropDownMenu{
+    display: none;
+    text-align: center;
+}
+.LogLineUlDM li{
+    padding: 0.780vw 0vw;
+    color: #575757;
+        
+    background: linear-gradient( to left, rgb(92 7 52 / 0%) 0%, rgb(255 255 255 / 0%) 12%, rgb(0 0 0 / 49%) 47%, rgb(83 0 30 / 0%) 100% ) left bottom #c7282800 no-repeat;
+    background-size: 100vw 0.078vw;
+   
+    
+}
+
+
+
+
+/* .......................UPPER LINE OF THE NAV......................................  */
+
+.logLine{
+    background-color: #F7F7F7;
+}
+.logLinecontainer{
+    max-width: 85.803vw;
+    margin: 0px auto;
+    color: #575757;
+    font-family: forza;
+    font-weight: bold;
+    font-size: 0.780vw;
+    line-height: 0.926vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.LogLineUl {
+    display: flex;
+    font-size:0px;
+}
+.LogLineUl a {
+    margin-right: 1.17vw;
+    font-size: 0.780vw;
+    padding: 0.78vw 0px;
+    color: inherit;
+    font-family: forza;
+}
+.LogLineUl a:last-child{
+    margin-right: 0px;
+}
+.longLineArrow{
+    display: none;
+}
+
+
+@media only screen and (max-width: 999px) {
+        .logLinecontainer{
+            width: 90%;
+        }
+        
+}
+
+@media only screen and (max-width: 600px) {
+    .logLinecontainer{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .logLineLeftSide{
+        display: none;
+    }
+
+    .logLineRightSide{
+        display: none;
+    }
+
+    .longLineArrow{
+          display: block;
+          margin: 1.66vw auto;
+          font-size: 2.5vw;
+          cursor: pointer;
+    }
+    
+    .rotate{
+        -moz-transition: all .2s linear;
+        -webkit-transition: all .2s linear;
+        transition: all .2s linear;
+        -moz-transform:rotate(180deg);
+        -webkit-transform:rotate(180deg);
+        transform:rotate(180deg);
+        align-self: end;
+    }
+
+    
+
+    .makeHeightLonger{
+        -moz-transition: all 2s linear;
+        -webkit-transition: all 2s linear;
+        transition: all 2s linear;
+        height: 28.333vw;
+        transform: height ;
+        
+    }
+
+    .showContent{
+        display: block !important;
+    }
+   
+}
+
+
+/* .....................end of line of the nav........................... */
+
+/* .....................start of the main~........................... */
+
+#main {
+    background-image: url("../imgs/backgrounds/Hero.png");
+    width: 100%;
+    height: calc(100vh - 5vh);
+    background-size: cover;
+    object-fit: cover;
+}
+
+.mainContainer{
+    max-width:  85.803vw;
+    margin: auto;
+}
+.logoImg{
+    width: 10.686vw;
+}
+
+.logoImg img{
+    width: 100%;
+}
+
+.navBarUl{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: space-between;
+    font-family: forza;
+    color: rgb(63, 42, 42);
+      
+}
+.navBarUl a li{
+
+  letter-spacing: 0.18vw;
+  line-height: 1.5vw;
+  font-family: inherit; 
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.250vw;
+}
+
+.navBarUl li:hover{
+    color: rgb(208, 202, 202);
+}
+
+
+
+/* .....................end of line of the navBar........................... */
+
+/* .....................start of the Models~........................... */
+
+@media only screen and (max-width: 999px){
+    .mainContainer{
+        width: 100%;
+        margin: auto;
+    }
+    .navBarUl{
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .navBarUl{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 70vh;
+        justify-content: space-between;
+        flex-direction: column;
+          
+    }
+    .navBarUl a li{
+
+        letter-spacing: 0.18vw;
+        line-height: 1.5vw;
+        font-family: inherit; 
+        color: #fff;
+        font-weight: 700;
+        font-size: 5.250vw;
+    }
+}
+
+
+/* .................carusel sliders...................................... */
+
+
+
+.slider{
+    margin: 0 auto;
+    display: flex;
+    background-color: #fff;
+    height: 9.204vw;
+    max-width: 100vw;
+    justify-content: center;
+    cursor: grab;
+    overflow-x: hidden;
+}
+
+.innerSlide{
+    
+    width: 11.310vw;
+    margin: 0 1.973vw;
+    text-align: center;
+    margin-bottom: 1.326vw;
+}
+.innerSlide img{
+    width: 100%;
+}
+
+.innerSlide h3 {
+    font-family: forza;
+    font-weight: normal;
+    font-size: 1.248vw;
+    color: #575757;
+    letter-spacing: 0.195vw;
+}
+
+
+
+.leftShadow{
+    width: 11vw;
+    height: 9vw;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 70%, rgba(255,255,255,0) 100%);
+    position: absolute;
+    z-index: +10;
+    top: 9.921vw;
+}
+
+.rightShadow{
+    width: 11vw;
+    height: 9vw;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 36%);
+    position: absolute;
+    z-index: +10;
+    top: 9.921vw;
+    right: 0;
+}
+
+
+  @media only screen and (max-width: 600px){
+      .whiteShadows{
+          display: none;
+      }
+      .slider{
+          display: none;
+      }
+     
+  }
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>end of models scroll>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+ 
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>text on main pic>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.textOnMainPic{
+    max-width: 80.206vw;
+    margin: 0 auto;
+    margin-top: 39.375vh;
+    color: #fff;
+}
+
+.mainText{
+
+    font-family: forza;
+    font-size: 4.100vw;
+    line-height: 4.905vw;
+    letter-spacing: 0.390vw;
+    
+}
+
+.pOnMainPic{
+    font-family: forza;
+    font-size: 1.560vw;
+    line-height: 2.496vw;
+    font-weight: lighter;
+}
+
+@media only screen and (max-width: 600px){
+    .textOnMainPic{
+        display: none;
+    }
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>end of on main text>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>text on at all>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>futureOfTheSportCar>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.futureOfTheSportCar{
+    width: 100%;
+    background-color: #FFF;
+    padding: 6.630vw 0px;
+}
+
+.container1000{
+    width: 73.206vw;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bigText{
+    font-family: forza;
+    font-weight: bold;
+    font-size: 3.125vw;
+    letter-spacing: 0.391vw;
+    max-width: 35.391vw;
+    max-height: 11.250vw;
+}
+
+
+
+.littleTextP{
+    max-width: 35.391vw;
+    max-height: 6.094vw;
+    font-size: 1.250vw;
+    line-height: 2vw;
+    font-family: forza;
+    font-weight: medium;
+}
+
+.futurebutton{
+    
+    background-color: #333;
+	color: #fff;
+    border: solid 1px #333;
+	border: none;
+	padding: 1.250vw 1.875vw;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    font-family: forza;
+    font-weight: normal;
+    font-size: 1vw;
+    letter-spacing: 0.391vw;
+    margin-top: 1.172vw;
+    transition: 0.2s;
+}
+
+.futurebutton:hover{
+    border: solid 1px #333;
+    background-color: #FFF;
+    color: #333;
+}
+
+@media only screen and (max-width: 600px){
+       .container1000{
+           display: flex;
+           flex-direction: column;
+       }
+
+       .bigText{
+           font-size: 8.125vw;
+           max-width: 70vw;
+       }
+       .littleText{
+           display: flex;
+           flex-direction: column;
+           padding-top: 25vw;
+           
+       }
+       .littleTextP{
+           font-size: 5vw;
+           line-height: 5vw;
+           max-width: 99vw;
+       }
+       .futurebutton{
+           margin-top: 35vw;
+           font-size: 5vw;
+       }
+}
+
+/* <!-- >>>>>>>>>>>>>>>>>tech details>>>>>>>>>>>>>>>>>>>>>>>>>>>>> --> */
+
+.techDetailsSection{
+    background-image: url("../imgs/sectiontech/Background.png");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.contentTechSection
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.leftSidetech h3{
+    font-family: forza;
+    font-weight: bolder;
+    color: #fff;
+    font-size: 3.120vw;
+    line-height: 3.744vw;
+    letter-spacing: 0.195vw;
+    max-width: 36.427vw;
+    text-transform: uppercase;
+}
+
+.leftSidetech p{
+    font-family: forza;
+    font-weight: lighter;
+    color: #fff;
+    font-size: 1.248vw;
+    line-height: 1.996vw;
+    max-width: 35.291vw;
+    max-width: 35.291vw;
+    margin: 1.244vw 0vw;
+}
+
+.techLearnMore{
+    background-color: #FFF;
+	border: solid 1px #fff;
+	padding: 1.250vw 1.875vw;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    font-family: forza;
+    font-weight: bold;
+    font-size: 1vw;
+    letter-spacing: 0.391vw;
+    margin-top: 1.172vw;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.techLearnMore:hover{
+        background-color: transparent;
+        border: solid 1px #fff;
+        color: #FFF;
+
+}
+
+.techImg{
+    width: 54.134vw;
+}
+.techImg img{
+    width: 100%;
+}
+.techDetails{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.techDetailsHeader{
+    color: #FFF;
+    font-family: forza;
+    font-weight: normal;
+    font-size: 1.560vw;
+    line-height: 2.49;
+    letter-spacing: 0.390vw;
+}
+.techdetWrap{
+    display: flex;
+    justify-content: center;
+}
+.techdetWrap h4{
+     color: #FFF;
+     font-family: forza;
+     font-weight: bold;
+     font-size: 3.744vw;
+     line-height: 4.492vw;
+     letter-spacing: 0.195vw;
+}
+.techdetWrap p{
+    color: #FFF;
+    font-family: forzaThin;
+    font-size: 0.780vw;
+    line-height: 0.936vw;
+    letter-spacing: 0.190vw;
+}
+.techdetWrap div{
+    margin: 0 1.416vw;
+}
+
+.acceleration span{
+    color: #FFF;
+    font-family: forza;
+    font-size: 1.248vw;
+    line-height: 1.497vw;
+    text-transform: uppercase;
+    letter-spacing: 0.190vw;
+}
+
+.topSpeed span{
+    color: #FFF;
+    font-family: forza;
+    font-size: 1.248vw;
+    line-height: 1.497vw;
+    text-transform: uppercase;
+    letter-spacing: 0.190vw;
+}
+
+@media only screen and (max-width: 600px){
+    .contentTechSection{
+        flex-direction: column;
+        
+    }
+
+    .leftSidetech h3{
+        font-size: 7.120vw;
+        line-height: 6.744vw;
+        letter-spacing: 0.195vw;
+        max-width: 90vw;
+        text-align: center;
+        margin-top: 30vw;
+        
+    }
+    .leftSidetech p{
+        display: none;
+    }
+
+    .techLearnMore{
+        width: 100%;
+        margin-top: 7.172vw;
+        font-size: 5vw;
+        margin-top: 12.172vw;
+    }
+    
+    
+    .techDetailsSection{
+        height: 100vh;
+    }
+
+    .firstLine, .secendline  {
+        display: none;
+    }
+    .techdetWrap{
+        
+        flex-direction: column;
+    }
+    .techDetailsHeader{
+        font-size: 7.560vw;
+    }
+    .techdetWrap h4
+    {
+        font-size: 10.744vw;
+        line-height: 12.492vw;
+    }
+    .techdetWrap p{
+        font-size: 2.780vw;
+        line-height: 5.936vw;
+    }
+    .techdetWrap p{
+        margin-bottom: 5vw;
+    }
+}
+
+
+/* <!-- >>>>>>>>>>>>>>>>>important tools>>>>>>>>>>>>>>>>>>>>>>>>>>>>> --> */
+
+.impTools{
+    display: flex;
+    flex-direction: column;
+}
+.toolsContetn{
+    
+    width:  100%;
+    display: flex;
+    background-color: #FFF;
+    justify-content: space-between;
+}
+
+
+.imgSide{
+    width: 50%;
+}
+
+
+.imgSide img{
+    width: 100%;
+}
+.textside{
+    margin: 0 auto;
+    margin: auto;
+    
+}
+
+.textside h4{
+    max-width: 34.8414vw;
+    font-family: forza;
+    font-weight: bold;
+    font-size: 1.560vw;
+    line-height: 2.496vw;
+    letter-spacing: 0.234vw;
+    text-transform: uppercase;
+
+}
+.textside p{
+    width: 35.902vw;
+    font-family: forzaThin;
+    font-weight: bold;
+    font-size: 1.248vw;
+    line-height: 1.996vw;
+}
+
+@media only screen and (max-width: 600px){
+    .toolsContetn{
+        display: block;
+    }
+    .imgSide{
+        width: 100%;
+    }
+
+    .toolsContetn2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .textside h4{
+        max-width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 3vw;
+        line-height: 4vw;
+        padding: 3vw 0;
+    }
+    .textside p{
+        width: 80%;
+        margin: 10vw auto;
+        font-size: 3vw;
+        line-height: 5vw;
+    }
+
+
+}
+

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awsom links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="imgs/favicons/favicon.ico">
+    <!-- Mobile (Android, iOS & others) -->
+    <link rel="apple-touch-icon" href="imgs/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" sizes="32X32" href="imgs/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" sizes="16X16" href="imgs/favicons/favicon-16x16.png">
+
+    <!-- iOS Settings -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+
+    <title>PORSCHE </title>
+    <link rel="stylesheet" href="styles/style.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script src="scripts/script.js"></script>
+
+
+
+</head>
+
+<body>
+    <!-- .......................UPPER LINE OF THE NAV...................................... -->
+    <section class="logLine" id="logLine">
+        <div class="logLinecontainer">
+            <div class="logLineLeftSide">
+
+                <ul class="LogLineUl">
+                    <a href="#Download">
+                        <li>DOWNLOAD PRICELIST</li>
+                    </a>
+                    <a href="#Testdrive">
+                        <li>BOOK A TEST DRIVE</li>
+                    </a>
+                    <a href="#contact">
+                        <li>CONTACT US</li>
+                    </a>
+                    <a href="#dealer">
+                        <li>FIND A DEALER</li>
+                    </a>
+
+                </ul>
+
+            </div>
+
+            <div id="dropDownMenu">
+                <ul class="LogLineUlDM">
+                    <a href="#Download">
+                        <li>DOWNLOAD PRICELIST</li>
+                    </a>
+                    <a href="#Testdrive">
+                        <li>BOOK A TEST DRIVE</li>
+                    </a>
+                    <a href="#contact">
+                        <li>CONTACT US</li>
+                    </a>
+                    <a href="#dealer">
+                        <li>FIND A DEALER</li>
+                    </a>
+
+                </ul>
+            </div>
+
+            <div class="longLineArrow" id="longLineArrow">
+                <i class="far fa-arrow-alt-circle-down" onclick="respMenuDrop()"></i>
+            </div>
+
+            <div class="logLineRightSide">
+                <ul class="LogLineUl">
+                    <a href="#login-register">
+                        <li>LOGIN / REGISTER</li>
+                    </a>
+                </ul>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <section id="main">
+        <div class="mainContainer">
+            <div class="navBar">
+                <nav class="navBarnav">
+                    <ul class="navBarUl">
+                        <a href="#!">
+                            <li class="liLogo">
+                                <div class="logoImg">
+                                    <img src=".//imgs/logo/Porsche-Logo.png" alt="Porsche Logo">
+                                </div>
+                            </li>
+                        </a>
+
+                        <a href="#!">
+                            <li>MODELS</li>
+                        </a>
+
+                        <a href="#!">
+                            <li>SHOPPING TOOLS</li>
+                        </a>
+
+                        <a href="#!">
+                            <li>WHY PORSCHE</li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- >>>>>>>>>>>>>>>>>>>>>>>>Model slider container>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+        <div class="slider">
+
+
+            <div>
+                <div class="innerSlide">
+                    <img src="imgs/cars/718.png" alt="718">
+                    <h3>718</h3>
+                </div>
+            </div>
+
+            <div>
+                <div class="innerSlide">
+                    <img src="imgs/cars/911.png" alt="911">
+                    <h3>911</h3>
+                </div>
+            </div>
+
+            <div>
+                <div class="innerSlide">
+                    <img src="imgs/cars/taycan.png" alt="TAYCAN">
+                    <h3>TAYCAN</h3>
+                </div>
+            </div>
+
+            <div>
+                <div class="innerSlide">
+                    <img src="imgs/cars/panamera.png" alt="PANAMERA">
+                    <h3>PANAMERA</h3>
+                </div>
+            </div>
+
+            <div>
+                <div class="innerSlide">
+                    <img src="imgs/cars/macan.png" alt="MACAN">
+                    <h3>MACAN</h3>
+                </div>
+            </div>
+
+            <div>
+                <div class="innerSlide">
+                    <img src="imgs/cars/cayenne.png" alt="cayenne">
+                    <h3>CAYENE</h3>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+        <!-- >>>>>>>>>>>>>>>>>>>>>>>text on main pic>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+        <div class="textOnMainPic">
+            <h3 class="mainText">PANAMERA TURBO S</h3>
+            <p class="pOnMainPic">Check out the PANAMERA TURBO S E-Hybrid </p>
+        </div>
+
+    </section>
+
+
+    <!-- >>>>>>>>>>>>>>>>>white shadows>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+    <div class="whiteShadows">
+        <div class="leftShadow"></div>
+        <div class="rightShadow"></div>
+    </div>
+
+    <section class="futureOfTheSportCar">
+        <div class="container1000">
+            <div class="bigText">SHAPING THE FUTURE OF THE SPORTS CAR</div>
+            <div class="littleText">
+                <p class="littleTextP">
+                    Shaping the future of the
+                    sports car - this is the theme of Strategy 2025.
+                    The company’s main objective as part of this strategy
+                    is to achieve value-generating growth.
+                </p>
+                <button class="futurebutton">LEARN MORE</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- >>>>>>>>>>>>>>>>>tech details>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+    <section class="techDetailsSection">
+        <div class="contentTechSection">
+
+            <div class="leftSidetech">
+                <h3 class="headerTech">Quintessential sports cars.</h3>
+                <p class="techP">
+                    The Cayenne and Cayenne Coupe: both boast a
+                    striking appearance and impressive performance,
+                    with up to five seats.
+                </p>
+                <button class="techLearnMore">learn more</button>
+            </div>
+
+
+            <div class="RightsideTech">
+                <div class="techImg"><img src="imgs/sectiontech/FCar 2.png" alt="car pic"></div>
+                   <div class="techDetails">
+
+
+                    <h4 class="techDetailsHeader">CAYENNE COUPE</h4>
+
+
+                    <div class="techdetWrap">
+                        <div class="horsePower">
+                            <h4>335</h4>
+                            <p>horsepower</p>
+                        </div>
+
+                        <div class="firstLine"><img src="imgs/sectiontech/Line 2.1.png" alt="line pic"></div>
+
+                        <div class="acceleration">
+                            <h4>5.7<span>s</span></h4>
+                            <p>ACCELERATION</p>
+                        </div>
+
+                        <div class="secendline"><img src="imgs/sectiontech/Line 2.1.png" alt="line pic"></div>
+
+                        <div class="topSpeed">
+                            <h4>150<span>mph</span>
+                            <p>top speed</p>
+                        </div>
+                    </div>
+
+                </div> 
+            </div>
+        </div>
+
+
+
+        </div>
+    </section>
+
+        <!-- >>>>>>>>>>>>>>>>>important tools>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+
+        <section class="impTools">
+            <div class="toolsContetn">
+                <div class="imgSide">
+                    <img src="imgs/toolsection/Our Hands Photo.png" alt="hands pic">
+                </div>
+                <div class="textside">
+                    <h4>
+                        Our most important tools from day one? Our hands.
+                    </h4>
+                    <p>
+                        The manufacturing process is a sophisticated task. 
+                        Besides the use of valuable materials such as leather, 
+                        Alcantara®, carbon, wood or aluminum, our most important
+                        asset is human hands. They are often the only tools that
+                        meet our high demands.
+                    </p>
+                </div>
+            </div>
+            <div class="toolsContetn toolsContetn2">
+                <div class="textside">
+                    <h4>
+                        Personality and character. In every detail.
+                    </h4>
+                    <p>
+                        Our customers’ wishes are exclusive and above those of the masses.
+                         How do we meet them? With experience and passion from every single
+                         employee. You can feel that in every last detail.
+
+                    </p>
+                </div>
+                <div class="imgSide">
+                    <img src="imgs/toolsection/Every Detail.png" alt="hands pic">
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+</body>
+
+</html>
