@@ -64,6 +64,7 @@ a {
 
 .logLine{
     background-color: #F7F7F7;
+    min-height: 1px;
 }
 .logLinecontainer{
     max-width: 85.803vw;
@@ -75,6 +76,7 @@ a {
     line-height: 0.926vw;
     display: flex;
     justify-content: space-between;
+
 }
 
 .LogLineUl {
@@ -109,6 +111,14 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        font-size: 5.780vw;
+        line-height: 7.926vw;
+        
+
+    }
+
+    .fa-regular, .far{
+        font-size: 8vw;
     }
     .logLineLeftSide{
         display: none;
@@ -116,6 +126,11 @@ a {
 
     .logLineRightSide{
         display: none;
+    }
+
+    .LogLineUlDM li{
+        padding: 2.7vw 0vw;
+        background-size: 100vw 0.28vw
     }
 
     .longLineArrow{
@@ -141,8 +156,8 @@ a {
         -moz-transition: all 2s linear;
         -webkit-transition: all 2s linear;
         transition: all 2s linear;
-        height: 28.333vw;
         transform: height ;
+        
         
     }
 
